@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="utf-8" />
-        <title>Mega Travel</title>
-        <meta name="description" content="ITC 475 assignment: Mega Travel website" />
+        <title>Mega Travel</title>    
+        <meta charset="utf-8">  
+        <meta name="description" content="ITC 475 assignment: Mega Travel website">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     
@@ -21,6 +21,5 @@
  
         </div>
        
-
     </body>
 </html>

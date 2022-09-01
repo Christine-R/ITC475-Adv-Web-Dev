@@ -12,7 +12,7 @@ body {
 }
 
 #wrapper,
-#loginform {
+#headerbox {
     margin: 0 auto;
     padding-bottom: 25px;
     background: #CFD8DC;
@@ -21,8 +21,6 @@ body {
     border: 4px solid #5D4037;
     border-radius: 4px;
 }
-   
-
    
 a {
     color: #0000ff;
