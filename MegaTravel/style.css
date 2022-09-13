@@ -2,26 +2,32 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-   
+
+#header {
+    margin: 20px auto;
+    background-color: #add8e6;
+    width: 600px auto;
+    height: 175px;
+    border-bottom: 20px solid #d3d3d3;
+}
+
+#menu {
+    text-align: center;
+    font-size: 125%;
+}
+
 body {
     margin: 20px auto;
     font-weight: 300;
-    background-color: #607D8B;
+    background-color: #fff;
 }
 
-#wrapper,
-#headerbox {
-    margin: 0 auto;
-    padding-bottom: 25px;
-    background: #CFD8DC;
-    width: 600px;
-    max-width: 100%;
-    border: 4px solid #5D4037;
-    border-radius: 4px;
+#main1 {
+    padding: 15px;
 }
-   
+
 a {
     color: #0000ff;
     text-decoration: none;
@@ -30,3 +36,79 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#footer {
+    padding: 15px;
+}
+
+/* Flexbox */
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-1 {
+    background-color: #fff;
+    padding: 10px;
+    flex: 25%;
+  }
+  
+  .flex-item-2 {
+    background-color: #fff;
+    padding: 10px;
+    flex: 25%;
+  }
+  
+  .flex-item-3 {
+    background-color: #fff;
+    padding: 10px;
+    flex: 25%;
+  }
+  
+  .flex-item-4 {
+    background-color: #fff;
+    padding: 10px;
+    flex: 25%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-4, .flex-item-3, .flex-item-2, .flex-item-1 {
+      flex: 100%;
+    }
+  }
+
+#pricing {
+    padding-top: 10px;
+    font-size: 35%;
+    text-align: left;
+}
+
+.price {
+    padding-top: 5px;
+    color: gray;
+    padding-top: 10px;
+}
+
+.pay {
+    padding-top: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.saving {
+    padding-top: 7px;
+    color: green;
+}
+
