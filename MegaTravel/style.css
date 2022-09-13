@@ -1,114 +1,125 @@
 /* CSS for Mega Travel */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
-    margin: 20px auto;
-    background-color: #add8e6;
-    width: 600px auto;
-    height: 175px;
-    border-bottom: 20px solid #d3d3d3;
+  margin: 20px auto;
+  background-color: #add8e6;
+  width: 600px auto;
+  height: 175px;
+  border-bottom: 20px solid #d3d3d3;
 }
 
 #menu {
-    text-align: center;
-    font-size: 125%;
+  text-align: center;
+  font-size: 125%;
 }
 
 body {
-    margin: 20px auto;
-    font-weight: 300;
-    background-color: #fff;
+  margin: 20px auto;
+  font-weight: 300;
+  background-color: #fff;
 }
 
 #main1 {
-    padding: 15px;
+  padding: 15px;
 }
 
 a {
-    color: #0000ff;
-    text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  bottom: 0px;
+  transition-property: color, bottom;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
 }
    
 a:hover {
-    text-decoration: underline;
+  color: red;
+  position: relative;
+  bottom: 10px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #footer {
-    padding: 15px;
+  padding: 15px;
 }
 
 /* Flexbox */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    text-align: center;
+.flex-container {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-1 {
+  background-color: #fff;
+  border: 5px;
+  border-color: #000;
+  padding: 20px;
+  flex: 25%;
+}
+
+.flex-item-2 {
+  background-color: #fff;
+  padding: 20px;
+  flex: 25%;
+}
+
+.flex-item-3 {
+  background-color: #fff;
+  padding: 20px;
+  flex: 25%;
+}
+
+.flex-item-4 {
+  background-color: #fff;
+  padding: 20px;
+  flex: 25%;
+}
+
+/* Responsive layout: makes a one-column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-4, .flex-item-3, .flex-item-2, .flex-item-1 {
+    flex: 100%;
   }
-  
-  .flex-item-1 {
-    background-color: #fff;
-    padding: 10px;
-    flex: 25%;
-  }
-  
-  .flex-item-2 {
-    background-color: #fff;
-    padding: 10px;
-    flex: 25%;
-  }
-  
-  .flex-item-3 {
-    background-color: #fff;
-    padding: 10px;
-    flex: 25%;
-  }
-  
-  .flex-item-4 {
-    background-color: #fff;
-    padding: 10px;
-    flex: 25%;
-  }
-  
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-item-4, .flex-item-3, .flex-item-2, .flex-item-1 {
-      flex: 100%;
-    }
-  }
+}
 
 #pricing {
-    padding-top: 10px;
-    font-size: 35%;
-    text-align: left;
+  padding-top: 10px;
+  font-size: 35%;
+  text-align: left;
 }
 
 .price {
-    padding-top: 5px;
-    color: gray;
-    padding-top: 10px;
+  padding-top: 5px;
+  color: gray;
+  padding-top: 10px;
 }
 
 .pay {
-    padding-top: 5px;
-    font-weight: bold;
-    text-decoration: underline;
+  padding-top: 5px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .saving {
-    padding-top: 7px;
-    color: green;
+  padding-top: 7px;
+  color: green;
 }
 
