@@ -1,125 +1,125 @@
-/* CSS for Mega Travel */
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
 }
 
 #header {
-  margin: 20px auto;
-  background-color: #add8e6;
-  width: 600px auto;
-  height: 175px;
-  border-bottom: 20px solid #d3d3d3;
+    margin: 20px auto;
+    background-color: #add8e6;
+    width: 600px auto;
+    height: 175px;
+    border-bottom: 20px solid #d3d3d3;
 }
 
 #menu {
-  text-align: center;
-  font-size: 125%;
-}
-
-body {
-  margin: 20px auto;
-  font-weight: 300;
-  background-color: #fff;
-}
-
-#main1 {
-  padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  bottom: 0px;
-  transition-property: color, bottom;
-  transition-duration: 500ms;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    bottom: 0px;
+    transition-property: color, bottom;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
 }
-   
+
 a:hover {
-  color: red;
-  position: relative;
-  bottom: 10px;
+    color: #ffa500;
+    position: relative;
+    bottom: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+body {
+    padding: 15px;
+    font-weight: 300;
+    background-color: #fff;
 }
 
-#footer {
-  padding: 15px;
+h1 {
+    font-size: 2em;
+    color: #000;
 }
 
-/* Flexbox */
-* {
-  box-sizing: border-box;
-}
-  
-.flex-container {
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
+div.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
 }
 
-.flex-item-1 {
-  background-color: #fff;
-  border: 5px;
-  border-color: #000;
-  padding: 20px;
-  flex: 25%;
+div.gallery {
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #fff;
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
 }
 
-.flex-item-2 {
-  background-color: #fff;
-  padding: 20px;
-  flex: 25%;
+div.gallery:hover {
+    background-color: #000;
 }
 
-.flex-item-3 {
-  background-color: #fff;
-  padding: 20px;
-  flex: 25%;
+div.gallery img {
+    width: 100%;
+    height: 600px auto;
 }
 
-.flex-item-4 {
-  background-color: #fff;
-  padding: 20px;
-  flex: 25%;
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 
-/* Responsive layout: makes a one-column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-4, .flex-item-3, .flex-item-2, .flex-item-1 {
-    flex: 100%;
-  }
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #pricing {
-  padding-top: 10px;
-  font-size: 35%;
-  text-align: left;
+    padding-top: 10px;
+    font-size: 1em;
+    text-align: left;
+    color: #000;
 }
 
 .price {
-  padding-top: 5px;
-  color: gray;
-  padding-top: 10px;
+    padding-top: 5px;
+    color: gray;
+    padding-top: 10px;
 }
 
 .pay {
-  padding-top: 5px;
-  font-weight: bold;
-  text-decoration: underline;
+    padding-top: 5px;
+    font-weight: bold;
 }
 
 .saving {
-  padding-top: 7px;
-  color: green;
+    padding-top: 7px;
+    color: green;
 }
 
+#footer {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #000;
+    width: 600px auto;
+    height: 110px;
+    color: #fff;
+}
