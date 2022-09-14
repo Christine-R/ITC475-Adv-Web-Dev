@@ -1,0 +1,3 @@
+I could not figure out how to get the destination title and "price you pay" lines to transition along with the box hover transition.
+
+I also noticed while I was making some corrections based on markup validation errors that my page is no longer responsive. I have no idea what happened because it WAS responsive. Apparently I broke something along the way and I'm too tired at this point to hunt down the problem.
