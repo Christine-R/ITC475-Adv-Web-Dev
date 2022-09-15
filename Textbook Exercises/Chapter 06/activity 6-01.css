@@ -10,12 +10,8 @@ body {
 
 header {
     text-align: center;
-    margin: 20px auto;
-    background: #add8e6;
-    border-bottom: 20px solid #d3d3d3;
 }
 
-/* The nav bar changes from black in small screen to transparent in full screen. This may hold the key to how to make card text change on hover. */
 nav {
     margin-top: 20px;
     background: #000;
@@ -38,14 +34,10 @@ nav a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    transition: 250ms;
 }
 
 nav a:hover {
-    text-decoration: none;
-    color: #ffa500;
-    position: relative;
-    bottom: 10px;
+    color: red;
 }
 
 .breadcrumb {
@@ -73,10 +65,7 @@ nav a:hover {
 }
 
 .breadcrumb a:hover {
-    color: #ffa500;
-    position: relative;
-    bottom: 10px;
-    transition: 150ms;
+    text-decoration: underline;
 }
 
 .intro {
@@ -96,12 +85,6 @@ nav a:hover {
     border: 1px solid #000;
     padding: 15px;
     margin: 10px;
-    transition: 1500ms;
-}
-
-.product-card:hover {
-    background-color: #000;
-
 }
 
 .product-card a {
@@ -115,7 +98,6 @@ nav a:hover {
 
 .product-card h2 {
     margin: 30px 0 15px;
-    color: #000;
 }
 
 .product-card p {
@@ -150,10 +132,8 @@ nav a:hover {
         color: #000;
     }
     nav a:hover {
-        text-decoration: none;
-        color: #ffa500;
-        position: relative;
-        bottom: 10px;
+        text-decoration: underline;
+        color: #000;
     }
     .intro {
         width: 50%;
@@ -165,15 +145,6 @@ nav a:hover {
       .product-card {
           display: inline-block;
       }
-}
-
-.footer {
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #000;
-    width: 600px auto;
-    height: 110px;
-    color: #fff;
 }
 
 @media only print {

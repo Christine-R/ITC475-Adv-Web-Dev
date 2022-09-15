@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  background: #000;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background: darkgray;
+}
+
+/* Apply to screen sizes of 480 pixels or above */
+@media (min-width: 480px) {
+    nav ul {
+           display: flex;
+    }
+    nav li {
+           flex: 1 1 auto;
+    }
+}
+
+/* Apply to screens of 768 pixels or higher */
+@media only screen and (min-width: 768px) {
+    nav a {
+    font-size: 20px;
+    }
+}
+
+
+
