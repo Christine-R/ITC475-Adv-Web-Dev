@@ -1,3 +1,9 @@
+<!--
+CHRISTINE ROEDER
+ITC 475 FA22
+Welcome Component
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,68 +13,72 @@
         <meta name="description" content="Mega Travel | Home">
         <meta name="robots" content="nofollow">
         <link rel="stylesheet" href="style.css">
-        <title>Mega Travel</title>
+        <script src="welcome.js"></script>
     </head>
     
-<body>
+    <body onload="currentTime()">
 
-    <header>
-        <img src="images/mega-travel-logo.png" alt="Mega Travel logo" width="300" height="200">
-    </header>
+        <header>
+            <img src="images/mega-travel-logo.png" alt="Mega Travel logo" width="300" height="200">
+            <div id="timeOfDay"></div><br>
+            <img id="sunMoon" src="images/sun.png"></div>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-agent.html">Contact Agent</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-agent.html">Contact Agent</a></li>
+            </ul>
+        </nav>
 
-    <section class="intro">
-        <h1>Travel Packages</h1>
-        <p>We are specialized with International Travels and Tours. Our expertized and experience can save  you 100’s of dollar in your pocket. Beside the  money you can also save your valuable time at the time of transit or tour. You decide your budget and the time from your comfort zone. We will make it happen for you for an exceptional memory. Mega Travels is committed for an excellent service and support for all of its past, present and future customers. We are here today only for you. We remind ourself everyday and every moment with a sincere gratitude.</p>
-    </section>
 
-    <section class="product-cards">
-        <div class="product-card">
-            <img src="images/maldives.PNG" alt="Maldives Resort">
-            <h2><a href="">Maldives Resort</a></h2>
-            <p class="original-price">$1800.99</p>
-            <p class="current-price">Price you pay <span>$999.99</span></p>
-            <p class="saving">Your saving $801</p>
+
+        <section class="intro">
+            <h1>Travel Packages</h1>
+            <p>We are specialized with International Travels and Tours. Our expertized and experience can save  you 100’s of dollar in your pocket. Beside the  money you can also save your valuable time at the time of transit or tour. You decide your budget and the time from your comfort zone. We will make it happen for you for an exceptional memory. Mega Travels is committed for an excellent service and support for all of its past, present and future customers. We are here today only for you. We remind ourself everyday and every moment with a sincere gratitude.</p>
+        </section>
+
+        <section class="travel-cards">
+            <div class="package-card">
+                <img src="images/maldives.PNG" alt="Maldives Resort">
+                <h2><a href="">Maldives Resort</a></h2>
+                <p class="original-price">$1800.99</p>
+                <p class="current-price">Price you pay <span>$999.99</span></p>
+                <p class="saving">Your saving $801</p>
+            </div>
+
+            <div class="package-card">
+                <img src="images/mexico.PNG" alt="Mexico Resort">
+                <h2><a href="">Mexico Resort (All Inclusive!)</a></h2>
+                <p class="original-price">$2999.99</p>
+                <p class="current-price">Price you pay <span>$2199.99</span></p>
+                <p class="saving">Your saving $800</p>
+            </div>
+
+            <div class="package-card">
+                <img src="images/newzealand.PNG" alt="New Zealand Trek">
+                <h2><a href="">New Zealand Trek</a></h2>
+                <p class="original-price">$2499.00</p>
+                <p class="current-price">Price you pay <span>$2100.00</span></p>
+                <p class="saving">Your saving $399</p>
+            </div>
+
+            <div class="package-card">
+                <img src="images/venice.PNG" alt="Venice Italy">
+                <h2><a href="">Venice Italy</a></h2>
+                <p class="original-price">$4100.00</p>
+                <p class="current-price">Price you pay <span>$3699.00</span></p>
+                <p class="saving">Your saving $400</p>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p>Copyright Protected. All rights reserved.<br><br>
+            MEGA TRAVELS<br>
+            mega@travels.com</p>
         </div>
 
-        <div class="product-card">
-            <img src="images/mexico.PNG" alt="Mexico Resort">
-            <h2><a href="">Mexico Resort (All Inclusive!)</a></h2>
-            <p class="original-price">$2999.99</p>
-            <p class="current-price">Price you pay <span>$2199.99</span></p>
-            <p class="saving">Your saving $800</p>
-        </div>
-
-        <div class="product-card">
-            <img src="images/newzealand.PNG" alt="New Zealand Trek">
-            <h2><a href="">New Zealand Trek</a></h2>
-            <p class="original-price">$2499.00</p>
-            <p class="current-price">Price you pay <span>$2100.00</span></p>
-            <p class="saving">Your saving $399</p>
-        </div>
-
-        <div class="product-card">
-            <img src="images/venice.PNG" alt="Venice Italy">
-            <h2><a href="">Venice Italy</a></h2>
-            <p class="original-price">$4100.00</p>
-            <p class="current-price">Price you pay <span>$3699.00</span></p>
-            <p class="saving">Your saving $400</p>
-        </div>
-    </section>
-
-    <div class="footer">
-        <p>Copyright Protected. All rights reserved.<br><br>
-        MEGA TRAVELS<br>
-        mega@travels.com</p>
-    </div>
-
-</body>
+    </body>
 
 </html>
