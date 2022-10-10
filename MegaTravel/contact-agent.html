@@ -7,70 +7,55 @@
         <meta name="description" content="Mega Travel | Contact Agent">
         <meta name="robots" content="nofollow">
         <link rel="stylesheet" href="style.css">
-        <title>Mega Travel</title>
     </head>
-    
-<body>
 
-    <header>
-        <img src="images/mega-travel-logo.png" alt="Mega Travel logo" width="300" height="200">
-    </header>
+    <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-agent.html">Contact Agent</a></li>
-        </ul>
-    </nav>
+        <header>
+            <img src="images/mega-travel-logo.png" alt="Mega Travel logo" width="300" height="200">
+        </header>
 
-    <section class="intro">
-        <h1>Contact an Agent</h1>
-        <p>We would love to know more about your travel plans. Please fill out this form to get in touch with a travel agent.</p>
-    </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact-agent.html">Contact Agent</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
 
-<!--    
-    <section class="product-cards">
-        <div class="product-card">
-            <img src="images/maldives.PNG" alt="Maldives Resort">
-            <h2><a href="">Maldives Resort</a></h2>
-            <p class="original-price">$1800.99</p>
-            <p class="current-price">Price you pay <span>$999.99</span></p>
-            <p class="saving">Your saving $801</p>
-        </div>
+        <section class="intro">
+            <h1>Contact an Agent</h1>
+            <p>We would love to know more about your travel plans. Please fill out this form to get in touch with a travel agent.</p>
+        </section>
 
-        <div class="product-card">
-            <img src="images/mexico.PNG" alt="Mexico Resort">
-            <h2><a href="">Mexico Resort (All Inclusive!)</a></h2>
-            <p class="original-price">$2999.99</p>
-            <p class="current-price">Price you pay <span>$2199.99</span></p>
-            <p class="saving">Your saving $800</p>
-        </div>
+        <form class="reservation" name="reservation">
+            <div class="reservationGrid">
+                <div class="dropdown">
+                    <button type="button" class="dropButton">Select Your Destination</button>
+                    <div class="locationOptions">
+                        <a onclick="maldives();">Maldives, South Asia</a>
+                        <a onclick="cancun();">Cancun, Mexico</a>
+                        <a onclick="newZealand();">New Zealand</a>
+                        <a onclick="venice();">Venice, Italy</a>
+                    </div>
+                </div>
+                <div id="showActivities">
+                    <div id="activitiesList">
+                        <div id="destination"></div>
+                        <div id="checkboxes"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
 
-        <div class="product-card">
-            <img src="images/newzealand.PNG" alt="New Zealand Trek">
-            <h2><a href="">New Zealand Trek</a></h2>
-            <p class="original-price">$2499.00</p>
-            <p class="current-price">Price you pay <span>$2100.00</span></p>
-            <p class="saving">Your saving $399</p>
-        </div>
+        <script src="activities-selector.js"></script>
 
-        <div class="product-card">
-            <img src="images/venice.PNG" alt="Venice Italy">
-            <h2><a href="">Venice Italy</a></h2>
-            <p class="original-price">$4100.00</p>
-            <p class="current-price">Price you pay <span>$3699.00</span></p>
-            <p class="saving">Your saving $400</p>
-        </div>
-    </section>
--->
+        <footer>
+            <p>Copyright Protected. All rights reserved.<br><br>
+            MEGA TRAVELS<br>
+            mega@travels.com</p>
+        </footer>
 
-    <div class="footer">
-        <p>Copyright Protected. All rights reserved.<br><br>
-        MEGA TRAVELS<br>
-        mega@travels.com</p>
-    </div>
-
-</body>
+    </body>
 
 </html>
