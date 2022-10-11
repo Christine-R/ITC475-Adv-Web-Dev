@@ -58,16 +58,16 @@ nav a:hover {
     bottom: 10px;
 }
 
-.intro {
+#intro {
     margin: 30px 0px 10px 0px;
     padding: 10px;
 }
 
-.intro h1 {
+#intro h1 {
     margin-bottom: 15px;
 }
 
-.intro p {
+#intro p {
     line-height: 1.5;
 }
 
