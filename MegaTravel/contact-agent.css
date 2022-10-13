@@ -1,0 +1,88 @@
+.item1 { grid-area: intro-ca; }
+.item2 { 
+    grid-area: form-ca;
+    margin-top: -0px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+    'intro-ca'
+    'form-ca'
+}
+.grid-container2 > div {
+    text-align: left;
+}
+
+fieldset {
+    text-align: center;
+    padding: 20px;
+    margin: 0px 1500px 20px 20px;
+    background-color: #add8e6;
+    border-color: #000;
+    border-width: medium;
+}
+fieldset > div {
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    height: auto;
+}
+.dropbutton {
+    padding: 5px;
+}
+.dropdown-content {
+    background-color: #f9f9f9;
+}
+.dropdown:hover .locationOptions {
+    display: grid;
+}
+.locationOptions {
+    display: none;
+    position: static;
+}
+.locationOptions a {
+    padding: 7px;
+}
+.locationOptions a:hover {
+    background-color: #88d5ee;
+}
+#activitiesList {
+    display: inline;
+    padding: 0px;
+    width: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+label span {
+    color: red;
+}
+input {
+    padding: 10px;
+    width: 200px;
+}
+input:valid {
+    border: 2px solid green;
+}
+input:invalid {
+    border: 2px solid red;
+}
+.checkbox input {
+    margin-left: -30px;
+    text-align: left;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+button {
+    background: #13b5eb;
+    font-size: larger;
+    border: 0;
+    color: #fff;
+    width: 224px;
+    padding: 10px;
+}

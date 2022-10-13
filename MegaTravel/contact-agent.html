@@ -7,8 +7,8 @@
         <meta name="description" content="Mega Travel | Contact Agent">
         <meta name="robots" content="nofollow">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact-agent.css">
     </head>
-
     <body>
 
         <header>
@@ -23,12 +23,67 @@
             </ul>
         </nav>
 
-        <section class="intro">
-            <h1>Contact an Agent</h1>
-            <p>We would love to know more about your travel plans. Please fill out this form to get in touch with a travel agent.</p>
-        </section>
-
-
+        <div class="grid-container2">
+            <div class="item1">
+                <section class="intro">
+                    <h1>Contact an Agent</h1>
+                    <p>We would love to know more about your travel plans. Please fill out this form to get in touch with a travel agent.</p>
+                </section>
+            </div>
+            <div class="item2">
+                <form name="reservation" action="contact.php" method="post">
+                    <fieldset>
+                        <div class="dropdown">
+                            <button type="button" class="dropbutton">Select Your Destination<br>and Activities</button>
+                            <div class="dropdown-content">
+                                <div class="locationOptions">
+                                    <a onclick="maldives()">Maldives, South Asia</a>
+                                    <a onclick="cancun()">Cancun, Mexico</a>
+                                    <a onclick="newZealand()">New Zealand</a>
+                                    <a onclick="venice()">Venice, Italy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="showActivities">
+                            <div id="activitiesList">
+                                <div id="destination"></div>
+                                <div id="checkboxes"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="first_name">First name: <span>*</span></label>
+                            <input id="first_name" type="text" name="firstname" maxlength="20" required>
+                        </div>
+                        <div>
+                            <label for="last_name">Last name: <span>*</span></label>
+                            <input id="last_name" type="text" name="lastname" maxlength="20" required>
+                        </div>
+                        <div>
+                            <label for="email">Email: <span>*</span></label>
+                            <input id="email" type="email" name="email" maxlength="40" required>
+                        </div>
+                        <div>
+                            <label for="telephone">Phone: <span>*</span> nnn-nnn-nnnn</label>
+                            <input id="telephone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div>
+                            <label for="num_adults">How many adults? <span>*</span></label>
+                            <input id="num_adults" type="number" name="adults" min="1" max="10" required>
+                        </div>
+                        <div>
+                            <label for="num_children">How many children? <span>*</span></label>
+                            <input id="num_children" type="number" name="children" min="0" max="10" required>
+                        </div>
+                        <div>
+                            <label for="depart_date">Departure Date <span>*</span></label>
+                            <input id="depart_date" type="date" name="depart" required>
+                        </div>
+                        <input type="submit" value="Submit"><br><br>
+                        <input type="reset" value="Clear all fields and start over">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
 
         <footer>
             <p>Copyright Protected. All rights reserved.<br><br>
@@ -36,6 +91,7 @@
             mega@travels.com</p>
         </footer>
 
-    </body>
+        <script src="activities-selector.js"></script>
 
+    </body>
 </html>
