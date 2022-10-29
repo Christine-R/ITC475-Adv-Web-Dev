@@ -44,3 +44,4 @@ function checkedActivities() {
     }
     return false;
 }
+ 
