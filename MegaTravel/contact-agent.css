@@ -48,15 +48,32 @@ fieldset > div {
 .locationOptions a:hover {
     background-color: #88d5ee;
 }
+
 #activitiesList {
     display: inline;
     padding: 0px;
     width: auto;
 }
+#activitiesList #destination input {
+    border-style: none;
+    font-size:medium;
+    text-align: center;
+}
+#activitiesList #checkboxes input {
+    display: inline;
+    position: relative;
+    right: 5px;
+    top: 6px;
+    text-align: left;
+    height: 25px;
+    width: 25px;
+}
 
+#inputButtons {
+    font-weight: normal;
+}
 label {
     display: block;
-    margin-bottom: 10px;
 }
 label span {
     color: red;
@@ -64,19 +81,13 @@ label span {
 input {
     padding: 10px;
     width: 200px;
+    margin-bottom: 20px;
 }
 input:valid {
     border: 2px solid green;
 }
 input:invalid {
     border: 2px solid red;
-}
-.checkbox input {
-    margin-left: -30px;
-    text-align: left;
-    float: left;
-    margin-right: 10px;
-    width: auto;
 }
 button {
     background: #13b5eb;

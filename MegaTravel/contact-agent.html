@@ -8,11 +8,15 @@
         <meta name="robots" content="nofollow">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="contact-agent.css">
+        <script src="welcome.js"></script>
     </head>
-    <body>
+    
+    <body onload="currentTime()">
 
         <header>
             <img src="images/mega-travel-logo.png" alt="Mega Travel logo" width="300" height="200">
+            <div id="timeOfDay"></div><br>
+            <img id="sunMoon" src="images/sun.png" alt="Sun or moon icon">
         </header>
 
         <nav>
@@ -31,10 +35,10 @@
                 </section>
             </div>
             <div class="item2">
-                <form name="reservation" action="contact.php" method="post">
+                <form name="reservation" action="confirm.php" method="post">
                     <fieldset>
                         <div class="dropdown">
-                            <button type="button" class="dropbutton">Select Your Destination<br>and Activities</button>
+                            <button type="button" class="dropbutton">Click Here to Select Your Destination & Activities</button>
                             <div class="dropdown-content">
                                 <div class="locationOptions">
                                     <a onclick="maldives()">Maldives, South Asia</a>
@@ -50,36 +54,39 @@
                                 <div id="checkboxes"></div>
                             </div>
                         </div>
-                        <div>
-                            <label for="first_name">First name: <span>*</span></label>
-                            <input id="first_name" type="text" name="firstname" maxlength="20" required>
+                        <div id="inputButtons">
+                            <div>
+                                <label for="first_name">First name: <span>*</span></label>
+                                <input id="first_name" type="text" name="firstname" maxlength="20" required>
+                            </div>
+                            <div>
+                                <label for="last_name">Last name: <span>*</span></label>
+                                <input id="last_name" type="text" name="lastname" maxlength="20" required>
+                            </div>
+                            <div>
+                                <label for="email">Email: <span>*</span></label>
+                                <input id="email" type="email" name="email" maxlength="40" required>
+                            </div>
+                            <div>
+                                <label for="telephone">Phone: <span>*</span> nnn-nnn-nnnn</label>
+                                <input id="telephone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            </div>
+                            <div>
+                                <label for="num_adults">How many adults? <span>*</span></label>
+                                <input id="num_adults" type="number" name="adults" min="1" max="10" required>
+                            </div>
+                            <div>
+                                <label for="num_children">How many children? <span>*</span></label>
+                                <input id="num_children" type="number" name="children" min="0" max="10" required>
+                            </div>
+                            <div>
+                                <label for="depart_date">Departure Date <span>*</span></label>
+                                <input id="depart_date" type="date" name="depart" required>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit"><br><br>
+                            <input type="reset" value="Clear all fields and start over">
                         </div>
-                        <div>
-                            <label for="last_name">Last name: <span>*</span></label>
-                            <input id="last_name" type="text" name="lastname" maxlength="20" required>
-                        </div>
-                        <div>
-                            <label for="email">Email: <span>*</span></label>
-                            <input id="email" type="email" name="email" maxlength="40" required>
-                        </div>
-                        <div>
-                            <label for="telephone">Phone: <span>*</span> nnn-nnn-nnnn</label>
-                            <input id="telephone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        </div>
-                        <div>
-                            <label for="num_adults">How many adults? <span>*</span></label>
-                            <input id="num_adults" type="number" name="adults" min="1" max="10" required>
-                        </div>
-                        <div>
-                            <label for="num_children">How many children? <span>*</span></label>
-                            <input id="num_children" type="number" name="children" min="0" max="10" required>
-                        </div>
-                        <div>
-                            <label for="depart_date">Departure Date <span>*</span></label>
-                            <input id="depart_date" type="date" name="depart" required>
-                        </div>
-                        <input type="submit" value="Submit"><br><br>
-                        <input type="reset" value="Clear all fields and start over">
                     </fieldset>
                 </form>
             </div>
