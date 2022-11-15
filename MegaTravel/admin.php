@@ -1,14 +1,34 @@
-<!--
-CHRISTINE ROEDER
-ITC 475 FA22
--->
+<?php
+    // start a session
+    session_start();
+
+    $username = "siteadmin";
+    $password = "itc475";
+
+    if (isset($_SERVER['PHP_AUTH_USER']) &&
+        isset($_SERVER['PHP_AUTH_PW'])) 
+        {
+            if ($_SERVER['PHP_AUTH_USER'] === $username &&
+                $_SERVER['PHP_AUTH_PW'] === $password)
+                echo "You are now logged in";
+            else 
+                die("<br>Invalid username/password combination");
+        }
+    else {
+        header('WWW-Authenticate: Basic realm="Restricted Area"');
+        header('HTTP/1.1 401 Unauthorized');
+        die("Please enter your username and password");
+    }
+    echo password_hash("mypassword", PASSWORD_DEFAULT);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Mega Travel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <meta name="description" content="Mega Travel | Contact Request Information Submitted">
+        <meta name="description" content="Mega Travel | Admin">
         <meta name="robots" content="nofollow">
         <link rel="stylesheet" href="style.css">
         <style>
@@ -35,8 +55,16 @@ ITC 475 FA22
 
         <div style="margin-left: 20px;">
         <?php
+
+        // NEED TO MAKE ADMIN.PHP ACCESSIBLE ONLY VIA LOGIN.PHP
+        // If login successful, send user to admin.php
+        // Else remain on login.php with error message
+        // Also need logout
+
+
+
         /* Fetch all client-submitted requests one row at a time */
-        require_once 'login.php';
+        require_once 'db-login.php';
 
         try {
             $pdo = new PDO($attr, $user, $pass, $opts);

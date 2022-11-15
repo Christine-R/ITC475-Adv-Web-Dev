@@ -1,7 +1,7 @@
 <?php
 
 /* Connect to the SQL server */
-require_once 'login.php';
+require_once 'db-login.php';
 try { $pdo = new PDO($attr, $user, $pass, $opts); }
 catch (PDOException $e) {
     throw new PDOException($e->getMessage(), (int)$e->getCode());

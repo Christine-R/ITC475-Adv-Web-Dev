@@ -1,7 +1,3 @@
-<!--
-CHRISTINE ROEDER
-ITC 475 FA22
--->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,13 +31,14 @@ ITC 475 FA22
 
         <?php
         /* Connect to the SQL server */
-        require_once 'login.php';
+        require_once 'db-login.php';
         try { $pdo = new PDO($attr, $user, $pass, $opts); }
         catch (PDOException $e) {
             throw new PDOException($e->getMessage(), (int)$e->getCode());
         }
 
-        /* Create the REQUESTS table */
+        /* DO NOT DELETE THIS CODE */
+        /* CREATE the REQUESTS table */
         // $query = "CREATE TABLE requests (
         //     req_id SMALLINT NOT NULL AUTO_INCREMENT,
         //     fname varchar(30) NOT NULL,
@@ -57,6 +54,7 @@ ITC 475 FA22
         // )";
         // $result = $pdo->query($query);
 
+        /* DO NOT DELETE THIS CODE */
         /* Describe the REQUESTS table */
         // $query = "DESCRIBE requests";
         // $result = $pdo->query($query);
