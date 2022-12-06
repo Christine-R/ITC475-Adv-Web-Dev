@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Greatest Race</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="robots" content="noimageindex">
+        <meta name="description" content="Racing Game: The Greatest Race">
+        <meta name="keywords" content="racing game, race, game">
+        <meta name="author" content="Christine Roeder">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <header><p>The Greatest Race</p></header>
+    <div class="readyRace" id="readySetGo"></div>
+    <div class="cardContainer" id="cardContent">
+        <div class="winnerCard">
+            <div class="winnerName" id="winnerLabel"></div>
+            <div class="winnerInfo" id="winnerImg"></div>
+            <button type="button" class="buttonRaceAgain" onclick="location.reload();">Race Again</button>
+        </div>
+    </div>
+    <div class="startingGate">
+        <div class="finishLine" id="crossFinish"></div>
+        <div class="racingDog1" id="racer1"></div>
+        <div class="racingDog2" id="racer2"></div>
+    </div>
+    <div class="readySetGo" id="stopLightRacing">
+        <div class="redLight" id="redOff"></div>
+        <div class="greenLight" id="greenOn"></div>
+    </div>
+    
+    <div class="dogSelection" id="dogSelection">
+        <div class="selectDogsText">Select 2 dogs to race</div>
+        <div class="selectDogs" id="selectPugsley" onclick="addSelectedDog('pugsley');">
+            <img src="images/pugsley.png" class="racingView"><p>Pugsley</p>
+        </div>
+        <div class="selectDogs" id="selectBlue" onclick="addSelectedDog('blue');">
+            <img src="images/blue.png" class="racingView"><p>Blue</p>
+        </div>
+        <div class="selectDogs" id="selectSnowball" onclick="addSelectedDog('snowball');">
+            <img src="images/snowball.png" class="racingView"><p>Snowball</p>
+        </div>
+        <div class="selectDogs" id="selectJosie" onclick="addSelectedDog('josie');">
+            <img src="images/josie.png" class="racingView"><p>Josie</p>
+        </div>
+        <div class="startRace">
+            <p><button id="raceButton" onclick="raceSetUp();" disabled>Start the Race</button></p>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <p>Dog images by <a href="https://pixabay.com/users/graphicmama-team-2641041/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1417208" target="_blank">GraphicMama-team</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1417208" target="_blank">Pixabay</a></p>
+        </footer>
+    </div>
+
+
+
+    <script src="race-scripts.js"></script>
+    </body>
+</html>
