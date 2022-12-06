@@ -335,34 +335,21 @@ function textColor(color, winnerLabel) {
 }
 
 function sendToServer() {
-    /*
-    let form = document.createElement("form");
-    form.method = "POST";
-    form.action = ""; 
 
-    let winnerElement = document.createElement("input"); 
-    winnerElement.value = raceWinner;
-    winnerElement.name = "raceWinner";
+    let XHR = new XMLHttpRequest();
 
-    form.appendChild(winnerElement);
-    document.body.appendChild(form);
-    form.submit();
-    */
-
-    let XHR = new XMLHttpRequest()
-
-    // get the current timestamp
+    // Race timestamp
     raceTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
     
-    let params = "raceTime="+raceTime+"&dog1="+dog1+
+    let raceData = "raceTime="+raceTime+"&dog1="+dog1+
         "&dog2="+dog2+"&raceWinner="+raceWinner;
     
-    XHR.open("POST", "http://127.0.0.1/0 My Greatest Race/db-insert-results.php", true)
+    XHR.open("POST", "db-results.php", true);
     XHR.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    XHR.send(params)
     XHR.onload = function() {
         console.log(this.responseText);
     }
+    XHR.send(raceData);
 }
 
 function recordRacerNames(racerOne, racerTwo) {
